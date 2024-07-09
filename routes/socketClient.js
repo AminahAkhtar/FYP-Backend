@@ -1,5 +1,5 @@
 const ioClient = require('socket.io-client');
-const socket = ioClient.connect('http://localhost:5000'); // Ensure this matches your server URL
+const socket = ioClient.connect('https://bshm.vercel.app/'); // Ensure this matches your server URL
 
 // Listen for events from the server
 socket.on('eventName', (data) => {
