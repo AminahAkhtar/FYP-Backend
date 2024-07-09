@@ -26,7 +26,7 @@ const swaggerDocument = YAML.load('swagger.yaml');
 const port = process.env.PORT || 5000;  // Use the PORT environment variable
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Adjust the origin to match your client URL
+  origin: ['http://localhost:3000', 'https://fyp-backend-sand.vercel.app'], // Adjust the origin to match your client URL
   credentials: true,
 }));
 
