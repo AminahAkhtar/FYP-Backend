@@ -13,7 +13,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: 'http://localhost:3000', // Adjust the origin to match your client URL
+    origin: ['http://localhost:3000', 'https://fyp-backend-sand.vercel.app'],, // Adjust the origin to match your client URL
     methods: ['GET', 'POST']
   }
 });
