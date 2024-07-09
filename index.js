@@ -18,8 +18,8 @@ const io = socketIo(server, {
   }
 });
 
-// Load your OpenAPI Specification (OAS) file
-const swaggerDocument = YAML.load('swagger.yaml');
+// Adjust path to load swagger.yaml
+const swaggerDocument = YAML.load(path.resolve(__dirname, 'swagger.yaml'));
 
 // const port = 5000;
 
